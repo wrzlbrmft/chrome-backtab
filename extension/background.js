@@ -1,26 +1,40 @@
+var tabs = {};
+
 chrome.browserAction.onClicked.addListener(function(tab) {
-	if (typeof tab.openerTabId != "undefined" && tab.openerTabId) {
-		chrome.tabs.get(tab.openerTabId, function(tab) {
-			chrome.tabs.update(tab.id, {
+	if ("undefined" != typeof tabs[tab.id]) {
+		chrome.tabs.update(tabs[tab.id].openerTabId, {
 				"active": true
-			});
-		});
+			},
+			function(openerTab) {
+				if ("undefined" == typeof openerTab) {
+					chrome.tabs.create({
+						"index": tab.index,
+						"url": tabs[tab.id].openerTabUrl
+					});
+				}
+			}
+		)
 	}
-	else {
-		chrome.tabs.sendMessage(tab.id, {
-			"message": "getReferrer",
-			"index": tab.index
+});
+
+chrome.tabs.onCreated.addListener(function(tab) {
+	if ("undefined" != typeof tab.openerTabId && tab.openerTabId) {
+		chrome.tabs.sendMessage(tab.openerTabId, {
+			"message": "getUrl",
+			"tabId": tab.id
 		});
 	}
 });
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-	if (request.message == "openReferrer") {
-		if (typeof request.url != "undefined" && request.url) {
-			chrome.tabs.create({
-				"index": request.index,
-				"url": request.url
-			});
-		}
+	if ("returnUrl" == request.message) {
+		tabs[request.tabId] = {
+			"openerTabId": sender.tab.id,
+			"openerTabUrl": request.url
+		};
 	}
+});
+
+chrome.tabs.onRemoved.addListener(function(tabId, removeInfo) {
+	delete tabs[tabId];
 });

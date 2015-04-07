@@ -1,17 +1,17 @@
 {
 	"manifest_version": 2,
 	"name": "New Tab Back",
-	"description": "Re-opens the page from which a new tab was opened.",
+	"description": "Re-opens the page from which a tab was initially opened.",
 	"version": "0.1.0",
 	"permissions": ["tabs"],
 	"background": {
-		"scripts": ["background.js"],
-		"persistent": false
+		"scripts": ["background.js"]
 	},
 	"content_scripts": [
 		{
 			"matches": ["<all_urls>"],
-			"js": ["content.js"]
+			"js": ["content.js"],
+			"run_at": "document_start"
 		}
 	],
 	"browser_action": {
