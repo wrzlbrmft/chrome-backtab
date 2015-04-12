@@ -1,10 +1,8 @@
 # Backtab
 
-<img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-backtab/master/src/icons/icon128.png" align="right" />
-
 A Chrome extension that re-opens the page from which a tab was initially opened.
 
-If you do a lot of online research, reading through documentation, browsing
+<img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-backtab/master/src/icons/icon128.png" align="right" /> If you do a lot of online research, reading through documentation, browsing
 discussion groups or just Wikipedia, you most likely end up with a lot of open
 tabs.
 
