@@ -6,8 +6,8 @@ A Chrome extension that re-opens the page from which a tab was initially opened.
 discussion groups or just Wikipedia, you most likely end up with a lot of open
 tabs.
 
-At some point you end up in a tab asking yourself: ***Where is the page from
-which I opened this tab?***
+At some point you end up in a tab asking yourself:<br />
+***Where is the page from which I opened this tab?***
 
 *Backtab* either jumps back to that page or re-opens it if you have already
 closed it, no matter how long ago (Chrome itself only remembers the last 10
