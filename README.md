@@ -1,5 +1,7 @@
 # Backtab
 
+<img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-backtab/master/src/icons/icon128.png" align="right" />
+
 A Chrome extension that re-opens the page from which a tab was initially opened.
 
 If you do a lot of online research, reading through documentation, browsing
@@ -9,7 +11,7 @@ tabs.
 At some point you end up in a tab asking yourself: ***Where is the page from
 which I opened this tab?***
 
-<img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-backtab/master/src/icons/icon64.png" align="right" /> *Backtab* either jumps back to that page or re-opens it if you have already
+*Backtab* either jumps back to that page or re-opens it if you have already
 closed it, no matter how long ago (Chrome itself only remembers the last 10
 closed tabs incoherently).
 
