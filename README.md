@@ -15,6 +15,10 @@ tabs. At some point you end up in a tab asking yourself:
 
 Simply click the *Backtab* icon!
 
+## Installation
+
+You can install *Backtab* directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/backtab/ajkocakecencmdfjgegmoihjonjikpco).
+
 ## How to Contribute
 
 Feel free to join and help me improve this extension. Here are a few ideas:
