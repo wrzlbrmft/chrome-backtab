@@ -2,9 +2,10 @@
 
 <img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-backtab/master/src/icons/icon128.png" align="right" />
 
-*Backtab* either jumps back to the page that opened the current tab or re-opens
-it, if you have already closed it. This works no matter how long ago you closed
-it (Chrome itself only remembers the last 10 closed tabs incoherently).
+*Backtab* either jumps back to the page from which you opened the current tab,
+or re-opens it if you have already closed it. This works no matter how long ago
+you closed the page (Chrome itself only remembers the last 10 closed tabs
+incoherently).
 
 If you do a lot of online research, reading through documentation, browsing
 discussion groups or just Wikipedia, you most likely end up with a lot of open
