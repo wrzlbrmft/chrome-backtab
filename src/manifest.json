@@ -12,6 +12,7 @@
 		"96": "icons/icon96.png",
 		"128": "icons/icon128.png"
 	},
+	"homepage_url": "https://github.com/wrzlbrmft/chrome-backtab/blob/master/README.md",
 	"permissions": ["tabs"],
 	"background": {
 		"scripts": ["background.js"]
