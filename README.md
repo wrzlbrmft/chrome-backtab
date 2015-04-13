@@ -1,6 +1,6 @@
 # Backtab
 
-<img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-backtab/master/src/icons/icon128.png" align="right" />
+<img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-backtab/master/src/icons/icon128.png" align="right" style="padding-left: 10px;" />
 
 *Backtab* either jumps back to the page from which you opened the current tab,
 or re-opens it if you have already closed it. This works no matter how long ago
