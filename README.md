@@ -17,7 +17,8 @@ Simply click the *Backtab* icon!
 
 ## Installation
 
-You can install *Backtab* directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/backtab/ajkocakecencmdfjgegmoihjonjikpco).
+You can install *Backtab* directly from the
+[Chrome Web Store](https://chrome.google.com/webstore/detail/backtab/ajkocakecencmdfjgegmoihjonjikpco).
 
 ## How to Contribute
 
